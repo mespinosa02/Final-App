@@ -19,10 +19,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var ingredient2Label: UILabel!
     @IBOutlet weak var measurement3Label: UILabel!
     @IBOutlet weak var ingredient3Label: UILabel!
-    @IBOutlet weak var measurement4Label: UILabel!
-    @IBOutlet weak var ingredient4Label: UILabel!
-    @IBOutlet weak var measurement5Label: UILabel!
-    @IBOutlet weak var ingredient5Label: UILabel!
+    @IBOutlet weak var drinkImage: UIImageView!
+    
     
      var drinks: Drinks!
         
@@ -31,10 +29,11 @@ class DetailViewController: UIViewController {
             
             
             if drinks == nil {
-                drinks = Drinks(strDrink:"", strInstructions:"", strIngredient1:"", strIngredient2: "", strIngredient3: "", strMeasure1: "", strMeasure2: "", strMeasure3: "")
+                drinks = Drinks(strDrink:"", strInstructions:"", strIngredient1:"", strIngredient2: "", strIngredient3: "", strMeasure1: "", strMeasure2: "", strMeasure3: "", strDrinkThumb: "", url: "")
             }
 
-         
+         let drinkDetail = DrinkDetail()
+         drinkDetail.url = drinks.url
              
             updateUserInterface()
     }
@@ -47,6 +46,17 @@ class DetailViewController: UIViewController {
         measurement1Label.text = drinks.strMeasure1
         measurement2Label.text = drinks.strMeasure2
         measurement3Label.text = drinks.strMeasure3
+        
+        guard let url = URL(string: "strDrinkThumb") else {
+            self.drinkImage.image = UIImage(systemName: "person.crop.circle.badge.xmark")
+            return
+        }
+        do {
+            let data = try Data(contentsOf: url)
+            self.drinkImage.image = UIImage(data: data)
+        } catch {
+            print("ERROR: thrown trying to get image from URL \(url)")
+        }
         }
         
     }

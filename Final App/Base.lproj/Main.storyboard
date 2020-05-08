@@ -149,6 +149,7 @@
                     <navigationItem key="navigationItem" id="JvI-Qv-U5D"/>
                     <connections>
                         <outlet property="detailInstructionsLabel" destination="KEK-YC-VLi" id="4Kj-aU-Qkn"/>
+                        <outlet property="drinkImage" destination="tyb-vU-ebu" id="5ue-2C-iRh"/>
                         <outlet property="ingredient1Label" destination="UV0-sJ-MMD" id="koS-yB-C3w"/>
                         <outlet property="ingredient2Label" destination="DeG-mh-r8n" id="QlQ-nK-XrM"/>
                         <outlet property="ingredient3Label" destination="B0U-jP-NJ3" id="wBZ-VX-vdD"/>

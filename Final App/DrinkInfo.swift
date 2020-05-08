@@ -17,5 +17,7 @@ struct Drinks : Codable {
     var strMeasure1 : String
     var strMeasure2 : String
     var strMeasure3 : String
+    var strDrinkThumb : String
+    var url : String
 
 }

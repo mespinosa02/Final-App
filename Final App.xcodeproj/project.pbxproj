@@ -17,6 +17,7 @@
 		551F408E24653883007D54BD /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F408D24653883007D54BD /* Drinks.swift */; };
 		551F409824655105007D54BD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F409724655105007D54BD /* DetailViewController.swift */; };
 		551F409A246598BC007D54BD /* OpenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F4099246598BB007D54BD /* OpenViewController.swift */; };
+		551F409E2465A980007D54BD /* DrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F409D2465A980007D54BD /* DrinkDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		551F408D24653883007D54BD /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
 		551F409724655105007D54BD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		551F4099246598BB007D54BD /* OpenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenViewController.swift; sourceTree = "<group>"; };
+		551F409D2465A980007D54BD /* DrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				551F408B2465352E007D54BD /* DrinkInfo.swift */,
 				551F408D24653883007D54BD /* Drinks.swift */,
 				551F407B246531F4007D54BD /* ViewController.swift */,
+				551F409D2465A980007D54BD /* DrinkDetail.swift */,
 				551F409724655105007D54BD /* DetailViewController.swift */,
 				551F4099246598BB007D54BD /* OpenViewController.swift */,
 				551F407D246531F4007D54BD /* Main.storyboard */,
@@ -157,6 +160,7 @@
 				551F407A246531F4007D54BD /* SceneDelegate.swift in Sources */,
 				551F409824655105007D54BD /* DetailViewController.swift in Sources */,
 				551F409A246598BC007D54BD /* OpenViewController.swift in Sources */,
+				551F409E2465A980007D54BD /* DrinkDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
