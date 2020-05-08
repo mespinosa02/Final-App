@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
         
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowSegue" {
+        if segue.identifier == "ShowDetail" {
             let destination = segue.destination as! DetailViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow!
             destination.drinks = drinksData.drinkArray[selectedIndexPath.row]

@@ -31,39 +31,22 @@ class DetailViewController: UIViewController {
             
             
             if drinks == nil {
-                drinks = Drinks(strDrink:"", strInstructions:"", strIngredient1:"", strIngredient2: "", strIngredient3: "", strIngredient4: "", strIngredient5: "", strMeasure1: "", strMeasure2: "", strMeasure3: "", strMeasure4: "", strMeasure5: "")
+                drinks = Drinks(strDrink:"", strInstructions:"", strIngredient1:"", strIngredient2: "", strIngredient3: "", strMeasure1: "", strMeasure2: "", strMeasure3: "")
             }
-            nameLabel.text = drinks.strDrink
-            detailInstructionsLabel.text = ""
-            ingredient1Label.text = ""
-            ingredient2Label.text = ""
-            ingredient3Label.text = ""
-            ingredient4Label.text = ""
-            ingredient5Label.text = ""
-            measurement1Label.text = ""
-            measurement2Label.text = ""
-            measurement3Label.text = ""
-            measurement4Label.text = ""
-            measurement5Label.text = ""
+
+         
              
-           
-            let drinksDetail = DrinksDetail()
-            drinksDetail.getData {
-                DispatchQueue.main.async {
-                    self.detailInstructionsLabel.text = "\(drinksDetail.strInstructions)"
-                    self.ingredient1Label.text = "\(drinksDetail.strIngredient1)"
-                    self.ingredient2Label.text = "\(drinksDetail.strIngredient2)"
-                    self.ingredient3Label.text = "\(drinksDetail.strIngredient3)"
-                    self.ingredient4Label.text = "\(drinksDetail.strIngredient4)"
-                    self.ingredient5Label.text = "\(drinksDetail.strIngredient5)"
-                    self.measurement1Label.text = "\(drinksDetail.strMeasure1)"
-                    self.measurement2Label.text = "\(drinksDetail.strMeasure2)"
-                    self.measurement3Label.text = "\(drinksDetail.strMeasure3)"
-                    self.measurement4Label.text = "\(drinksDetail.strMeasure4)"
-                    self.measurement5Label.text = "\(drinksDetail.strMeasure5)"
-                    
-                }
-            }
+            updateUserInterface()
+    }
+    func updateUserInterface() {
+        nameLabel.text = drinks.strDrink
+        detailInstructionsLabel.text = drinks.strInstructions
+        ingredient1Label.text = drinks.strIngredient1
+        ingredient2Label.text = drinks.strIngredient2
+        ingredient3Label.text = drinks.strIngredient3
+        measurement1Label.text = drinks.strMeasure1
+        measurement2Label.text = drinks.strMeasure2
+        measurement3Label.text = drinks.strMeasure3
         }
         
     }

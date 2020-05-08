@@ -11,7 +11,7 @@ import Foundation
 class DrinksData {
 
     private struct Returned : Codable {
-        var drinks : [Drinks]
+        var drinks : [Drinks] = []
     }
 
     var drinkArray: [Drinks] = []
