@@ -13,6 +13,10 @@
 		551F407F246531F4007D54BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551F407D246531F4007D54BD /* Main.storyboard */; };
 		551F4081246531F7007D54BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551F4080246531F7007D54BD /* Assets.xcassets */; };
 		551F4084246531F7007D54BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551F4082246531F7007D54BD /* LaunchScreen.storyboard */; };
+		551F408C2465352E007D54BD /* DrinkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F408B2465352E007D54BD /* DrinkInfo.swift */; };
+		551F408E24653883007D54BD /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F408D24653883007D54BD /* Drinks.swift */; };
+		551F40942465499A007D54BD /* DrinksDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F40932465499A007D54BD /* DrinksDetail.swift */; };
+		551F409824655105007D54BD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551F409724655105007D54BD /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		551F4080246531F7007D54BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551F4083246531F7007D54BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		551F4085246531F7007D54BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		551F408B2465352E007D54BD /* DrinkInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkInfo.swift; sourceTree = "<group>"; };
+		551F408D24653883007D54BD /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		551F40932465499A007D54BD /* DrinksDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksDetail.swift; sourceTree = "<group>"; };
+		551F409724655105007D54BD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				551F4077246531F4007D54BD /* AppDelegate.swift */,
 				551F4079246531F4007D54BD /* SceneDelegate.swift */,
 				551F407B246531F4007D54BD /* ViewController.swift */,
+				551F409724655105007D54BD /* DetailViewController.swift */,
+				551F408B2465352E007D54BD /* DrinkInfo.swift */,
+				551F408D24653883007D54BD /* Drinks.swift */,
+				551F40932465499A007D54BD /* DrinksDetail.swift */,
 				551F407D246531F4007D54BD /* Main.storyboard */,
 				551F4080246531F7007D54BD /* Assets.xcassets */,
 				551F4082246531F7007D54BD /* LaunchScreen.storyboard */,
@@ -139,8 +151,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				551F407C246531F4007D54BD /* ViewController.swift in Sources */,
+				551F408E24653883007D54BD /* Drinks.swift in Sources */,
 				551F4078246531F4007D54BD /* AppDelegate.swift in Sources */,
+				551F408C2465352E007D54BD /* DrinkInfo.swift in Sources */,
 				551F407A246531F4007D54BD /* SceneDelegate.swift in Sources */,
+				551F40942465499A007D54BD /* DrinksDetail.swift in Sources */,
+				551F409824655105007D54BD /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
